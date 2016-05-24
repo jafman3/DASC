@@ -1,0 +1,1378 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+%\newrefformat{fig}{Figure \ref{#1}}
+\AtBeginDocument{%
+\let\ref\autoref
+\renewcommand\equationautorefname{\@gobble}
+}
+\end_preamble
+\options conference
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.75in
+\topmargin 1in
+\rightmargin 0.75in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a template LyX file for conference articles of conferences organized
+ by the Institute of Electrical and Electronics Engineers (IEEE).
+ For IEEE journal articles, see the template file 
+\emph on
+IEEEtran-Journal.lyx
+\emph default
+.
+ For general info see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://wiki.lyx.org/Examples/IEEE
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It is important that you use the correct document class options for your
+ document..
+ These are explained in the IEEEtran documentation: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Towards a new paradigm of UAV safety
+\end_layout
+
+\begin_layout Author
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+the standard way: 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Thomas Gurriet
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Eric Feron
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Juan-Pablo Afman
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Laurent Ciarletta
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Eric Johnson
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Dmitry Bershadsky
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+\begin_inset CommandInset href
+LatexCommand href
+name "Eric Feron"
+target "eric.feron@aerospace.gatech.edu"
+type "mailto:"
+
+\end_inset
+
+, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Eric Johnson"
+target "eric.johnson@ae.gatech.edu"
+type "mailto:"
+
+\end_inset
+
+, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Laurent Ciarletta"
+target "laurent.ciarletta@loria.fr"
+type "mailto:"
+
+\end_inset
+
+, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Thomas Gurriet"
+target "thomas.gurriet@gatech.edu "
+type "mailto:"
+
+\end_inset
+
+, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Juan-Pablo Afman"
+target "jafman3@gatech.edu"
+type "mailto:"
+
+\end_inset
+
+, 
+\begin_inset CommandInset href
+LatexCommand href
+name "Dmitry Bershadsky"
+target "dbershadsky@gatech.edu"
+type "mailto:"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+In 2013 in the US, the number of fatal accidents was only 236 for roughly
+ 64 million flights.
+ One can be proud of such an achievement, only if the challenges of tomorrow
+ are addressed in a timely and appropriate manner.
+ Among these challenges, the explosion of the civilian UAV market and the
+ possibility for virtually anyone to access the sky poses safety problems
+ never encountered before.
+ The current airspace will have to adapt to this paradigm shift, where people
+ do not operate from inside the vehicle but from the ground or some other
+ location: safe and ubiquitous human-system interaction remains the core
+ requirement.
+ Although system safety requirements, as they are currently performed in
+ aviation may appear to be overly strict for UAVs, we believe it is possible
+ to leverage the specific aspects of unmanned aviation to meet such requirements.
+ For example, the fact that human operators stand outside the vehicle completely
+ redefining the requirements and operational constraints for UAVs.
+ 
+\end_layout
+
+\begin_layout Abstract
+In this paper, we begin by analyzing the operational and safety issues arising
+ from the growing usage of UAV in the civilian airspace.
+ This then leads us to discussing the safety requirements arising from this
+ new paradigm.
+ By definition, safety is inherently an implicit property of any given system.
+ Therefore, it becomes an important challenge to explicitly define what
+ it means for a system to be safe, and to explore the entire range of safety-enh
+ancing mechanisms.
+ While self-destruction may not be an attractive concept for a traditional
+ airplane, it may become a totally reasonable approach in the context of
+ UAVs.
+ 
+\end_layout
+
+\begin_layout Abstract
+Next, we explore the new range of approaches to ensuring system safety from
+ a vehicle-centric viewpoint.
+ Considering hardware first, no real requirements or tests are currently
+ conducted to assess the quality of the entire system and its parts.
+ Hardware redundancy for safety-critical functions is largely lacking in
+ commercial products , although it may be an important part of a safe unmanned
+ solution.
+ Dynamic sets of requirements (geographic flight restrictions and flight
+ envelope protection for example) involve making decisions in real time.
+ This decision process relies on the ability for the vehicle to determine
+ its full state, or at least a critical part of it, including full knowledge
+ of failed components.
+ To achieve that goal, sensors play a fundamental role, especially since
+ remote human presence make it more difficult for the pilot/operator to
+ detect a failure on the vehicle using "seed of the pants".
+ The question is then: which sensors should be mandatory? An interesting
+ approach to determining vehicle state, including failure modes, is the
+ development of analytic redundancy via online state estimation, as it allows
+ to get information on the full vehicle state without full-state sensing.
+ Such safety-enhancing features come at a cost in terms of needed accuracy
+ and computational resources, and it will be interesting to quantitatively
+ determine the trade-offs in terms of weight, cost, performances, computational
+ load between direct sensing and state estimation for equivalent safety
+ levels.
+ 
+\end_layout
+
+\begin_layout Abstract
+The foregoing leads this paper directly to software considerations.
+ As safety requirements for UAVs differ from those applied to conventional
+ aviation, they open the door to develop previously unexplored control algorithm
+s and decision making strategies.
+ For example, a vehicle crash is no longer necessarily catastrophic if its
+ effects can be mitigated by good vehicle guidance and appropriate operational
+ constraints.
+ Such constraints may include enforcing operational altitude minima allowing
+ a vehicle to glide out of trouble in case of engine failure, for example.
+ Geofencing and damage-tolerant control are other examples of software-enabled,
+ safety-enhancing features.
+ The Verification and Validation (V&V) of all these algorithms and their
+ implementation could be similar to today's industry standards, but the
+ associated costs should be measured against the overall UAV market value
+ for the industry to remain competitive.
+ Minimizing the cost of system certification via extensive process automation
+ and component-based system safety evaluation are definitely two of the
+ main challenges in this area.
+ Changing a propeller should not void the safety certificate for the entire
+ craft, as long as the concept of equivalent level of safety, currently
+ in use by manned aviation, can be extended to unmanned aviation.
+ 
+\end_layout
+
+\begin_layout Abstract
+The outcome of this paper will be a detailed set of recommendations for
+ the development of safe unmanned vehicles.
+ These recommendations will be applied to a prototype unmanned system currently
+ under development at Georgia Tech.
+\end_layout
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+Raise awareness on the fact that the state of UAV safety is catastrophic
+ and solutions are within our reach.
+\end_layout
+
+\begin_layout Standard
+Paradigm shift from crash-free to crash-tolerant design.
+ We remove one part of the problem.
+ The previous philosophy was to keep the aircraft in the air as long as
+ possible, now we prefere to crash it that to let it wonder around.
+\end_layout
+
+\begin_layout Standard
+sUAV rules in the US, as long as we are not over people, we don't care about
+ crash.
+ So first step it to make sure we don't fly over people, done mostly programatic
+ally (geofencing).
+ Relaxed certification on the software and the hardware.
+\end_layout
+
+\begin_layout Standard
+Now if we want to fly over people, it would be no economially viable to
+ require the same amound of certification than for GA.
+ So we can again tolerate crashes but put restrictions on the UAV size and
+ control how it crash via proper system design.
+\end_layout
+
+\begin_layout Standard
+Advertising for NASA crash project, since there is a lot of research to
+ be done on this safe crash for flying vehicle aproach.
+\end_layout
+
+\begin_layout Standard
+In this paper,
+\end_layout
+
+\begin_layout Section
+A new operational context
+\end_layout
+
+\begin_layout Standard
+This new civilian UAV market is based on giving cheap and easy access to
+ the sky to virtually anyone.
+\end_layout
+
+\begin_layout Standard
+What it means for the hardware
+\end_layout
+
+\begin_layout Standard
+Heterogeneity of the sky.
+ How do we integrate UAV to general aviation.
+ Maybe we merge?
+\end_layout
+
+\begin_layout Standard
+What it means for the people (from pilots to operators).
+\end_layout
+
+\begin_layout Standard
+At the moment it is mostly RPAS, but what about fully automated systems?
+ Who becomes responsible? Manufacturer?
+\end_layout
+
+\begin_layout Standard
+UAVs operate at a much smaller scale than general aviation (5th element
+ the movie).
+ We will have to build a new definition of airspace build around a complex
+ an dynamic environment where people and infrastructure are the main safety
+ issue.
+ 
+\end_layout
+
+\begin_layout Standard
+Its not just about the UAVs but about the entire UAS built around the UAVs.
+\end_layout
+
+\begin_layout Standard
+From autopilots following orders to fully aware systems capable of making
+ decisions on the fly.
+ Safer than humans?
+\end_layout
+
+\begin_layout Section
+Smart avionics
+\end_layout
+
+\begin_layout Subsection
+Preventing crash
+\end_layout
+
+\begin_layout Subsubsection
+Basic rules
+\end_layout
+
+\begin_layout Standard
+Min alti (helicopter auto-rotation)
+\end_layout
+
+\begin_layout Subsubsection
+Geofencing
+\end_layout
+
+\begin_layout Standard
+Safety nets.
+\end_layout
+
+\begin_layout Standard
+Barrier functions.
+\end_layout
+
+\begin_layout Subsubsection
+Automated traffic management
+\end_layout
+
+\begin_layout Standard
+Coexistence of general aviation and UAVs.
+\end_layout
+
+\begin_layout Subsection
+Managing failures
+\end_layout
+
+\begin_layout Subsubsection
+Electronics redundancy
+\end_layout
+
+\begin_layout Subsubsection
+Online state estimation
+\end_layout
+
+\begin_layout Standard
+Extracting information about the vehicle without relying on costly and sometimes
+ heavy sensors.
+\end_layout
+
+\begin_layout Standard
+Because pilots are not in the vehicle anymore, detecting problems and failures
+ has to be done automatically, and that we can be smarter than loading the
+ vehicle with sensor by doing some online fault detection through indirect
+ sensing.
+ And that we can then have a smart failure management system.
+\end_layout
+
+\begin_layout Subsubsection
+Alternative guidance laws
+\end_layout
+
+\begin_layout Standard
+As of now
+\end_layout
+
+\begin_layout Standard
+It is not about performance at this stage.
+ Primal control capabilities could potentially make the difference between
+ life and death.
+\end_layout
+
+\begin_layout Standard
+Is auto-rotation relevant?
+\end_layout
+
+\begin_layout Standard
+F18 without wing
+\begin_inset CommandInset citation
+LatexCommand citep
+key "F18-without wing"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Software reliability and modularity
+\end_layout
+
+\begin_layout Standard
+The Verification and Validation (V&V) of all these algorithms and their
+ implementation could be similar to today's industry standards, but the
+ associated costs should be measured against the overall UAV market value
+ for the industry to remain competitive.
+ Minimizing the cost of system certification via extensive process automation
+ and component-based system safety evaluation are definitely two of the
+ main challenges in this area.
+ Changing a propeller should not void the safety certificate for the entire
+ craft, as long as the concept of equivalent level of safety, currently
+ in use by manned aviation, can be extended to unmanned aviation.
+ 
+\end_layout
+
+\begin_layout Section
+Fault tolerant UAV design
+\end_layout
+
+\begin_layout Standard
+As of now, we have only talked about software based approaches for making
+ UAVs safer.
+ As we said earlier, as the avionics becomes more and more involved the
+ cost of developing and maintaining overly complex software might become
+ prohibitive.
+ And even if we were capable of efficiently developing arbitrarily complex
+ avionics, it is ludicrous to think that we could achieve an absolute zero
+ crash state.
+ All our efforts in terms of V&V could only allow us to asymptotically converge
+ to this ideal state but the remaining epsilon has to be handled with intelligen
+t system design of the vehicle itself.
+ In the end, it may be more efficient to have simpler software combined
+ with efficient safety features implemented at the hardware level.
+ This approach is coherent with the current regulation mindset that tolerates
+ crashes as long as they are safe for people on the ground.
+\end_layout
+
+\begin_layout Standard
+In this section, we will discuss several hardware solutions that could be
+ used for civilian UAVs, mainly of the multi-rotors type as they seems to
+ be the most popular platform currently used.
+\end_layout
+
+\begin_layout Subsection
+Reducing impact energy
+\end_layout
+
+\begin_layout Standard
+As discussed earlier, the main safety requirement is about humans.
+ Therefore, most safety specifications are based on potential injuries to
+ the human body.
+ As the head is naturally exposed to vehicles falling from the sky, blunt
+ head trauma is one of the most likely injury that can have devastating
+ short and long term effects 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Head trauma"
+
+\end_inset
+
+.
+ Therefore, reducing the projectile (in this case the falling UAV) impact
+ energy is the most natural thing to do.
+ The french regulation for example limits this impact energy to 69J
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Arrété UAV france"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Parachutes
+\end_layout
+
+\begin_layout Standard
+The most common device actually used for UAVs is the parachute.
+ Since its popularization during the first world war, the parachute technology
+ has had time to mature and is now a relatively reliable solution for slowing
+ down objects.
+ However, in order for the parachute to have time and open, a minimum flight
+ altitude is required.
+ If maximum altitudes are explicitly defined by most regulations, it is
+ down to the operator to flight its UAV in order to assure the proper functionin
+g of its device in order to limit impact energy.
+ This is because most regulations prevent UAVs flights over populated area,
+ but as we move forward, rules similar to general aviation will have to
+ be put in place regarding flight over populated areas.
+ These rules will have to integrate the recovery systems capabilities of
+ current UAVs and maybe impose what type of technology to use.
+ Predefined take-off and landing site may also be part of the solution to
+ safely get to the minimum altitude.
+\end_layout
+
+\begin_layout Standard
+Another critical component to parachute operation is its passive nature
+ when it comes to wind.
+ The highest the parachute is deployed, the more uncertain the landing spot
+ becomes
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Parachutes for UAVs"
+
+\end_inset
+
+.
+ This is even more true of an engine happens to get jammed at full throttle.
+ Therefore, deploying the parachute as soon as possible may not be the best
+ strategy.
+ And even if the parachute is deployed at the right time, there is still
+ a significant number of ways the canopy and the lines can malfunction.
+ Many skydivers die each years because of such malfunctions, usually because
+ of improper folding of the canopy.
+ Note that parachutes needs to be inspected and re-folded regularly opening
+ one more door for errors, especially if not done by professionals.
+ Finally, if everything works as planed and the parachute allows the UAV
+ to slow fall to the ground, there is still a lot of safety issues arising
+ from the shock itself that we will discuss later in this article.
+ 
+\end_layout
+
+\begin_layout Standard
+In the end, parachutes, if use correctly, can be efficient devices.
+ However, because there is so much room for errors, imposing regulations
+ on the technology itself seems necessary, as is the usage of complementary
+ technologies to reduce the impact trauma on humans.
+\end_layout
+
+\begin_layout Subsubsection
+Lifting control surfaces
+\end_layout
+
+\begin_layout Standard
+As we discussed previously, one of the drawbacks for parachutes is the passive
+ nature of the fall.
+ Controllable parafoils (or ram-air) can be used but with the same drawback
+ as for parachutes.
+ Therefore, it is natural to think about using dedicated fully rigid control
+ surfaces as an integrant part of the structure.
+ In the end, what really matter is that UAVs don't hit anyone, so trading
+ off lower impact energy for better control has to be considered.
+ This concept already exists
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Free fall cam"
+
+\end_inset
+
+ and it wouldn't take much space and weight to implement on classical multi-roto
+rs.
+\end_layout
+
+\begin_layout Standard
+In complement to control surfaces, a lifting component could be added to
+ better slow down the fall, and possibly stabilize a vehicle that would
+ have entered an uncontrolled spinning state for example.
+ Similar concept have already been tested (e.g.
+ Virgin Galactic SpaceShipTwo) and even purely passive designs could be
+ effective enough to slow down the fall to acceptable speeds.
+ 
+\end_layout
+
+\begin_layout Standard
+In the end, the need for hybrid vehicles that combine wings and stationary
+ flight capabilities is already there, and it is just a matter of time before
+ purely vertical flight vehicles become replaced.
+ Not only will this have a significant impact on UAVs performances, but
+ it will also contribute to making these machines safer by having fundamentally
+ redundant flying capabilities.
+\end_layout
+
+\begin_layout Subsubsection
+Controlled disintegration
+\end_layout
+
+\begin_layout Standard
+The two previous solutions were mainly aiming at lowering terminal velocity,
+ but one could also try and reduce the terminal kinematic energy by playing
+ with the other term of the equation i.e.
+ mass.
+ Strategically destroying the vehicle is definitely not appropriate for
+ general aviation where the safety of the people on board is the priority,
+ but with UAVs it becomes a interesting and viable option.
+ This option has been discussed in the distant but not antithetical context
+ of asteroid deflection 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Exploding asteroid"
+
+\end_inset
+
+ where transforming a big mass into a cloud of smaller debris allows for
+ a better dissipation of energy into the atmosphere.
+ 
+\end_layout
+
+\begin_layout Standard
+If the explosion is quite dramatic for asteroid deflection (nuclear explosion!),
+ it can be applied in a much more controlled and safe way for UAV.
+ Polymer-bonded explosives (PBX) for example, exhibit good strength and
+ machining capabilities
+\begin_inset CommandInset citation
+LatexCommand citep
+key "PBX CNC,PBX strenght"
+
+\end_inset
+
+.
+ This material could therefore be used for making specific parts of the
+ vehicle to provide controlled destruction capabilities of the UAV.
+ Sequential destruction strategies could then be though of to intelligently
+ reduce the vehicle into smaller pieces, possibly through a chain reaction
+ as is done in building demolition
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Building destruction"
+
+\end_inset
+
+ or rocket stage separation
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pirotechnic in aerospace"
+
+\end_inset
+
+.
+ Despite they intimidating nature, pyrotechnics are now a well mastered
+ technology that the general public is subjected to on a daily basis
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pyrothechnics in automotive"
+
+\end_inset
+
+ (e.g.
+ airbags and seat belts).
+ It could very well play a major role in the UAVs of tomorrow.
+\end_layout
+
+\begin_layout Subsection
+Reducing impact force
+\end_layout
+
+\begin_layout Standard
+Restricted kinematic energy at impact is necessary to minimize the risk
+ of blunt trauma, but one must realize that it is definitely not enough
+ to ensure the physical integrity of people on the ground.
+ It doesn't take much energy to create irreversible trauma in the case of
+ impact of the human skull against a hard surface.
+ As we can see in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Propeler hit video"
+
+\end_inset
+
+, it doesn't take much either to perforate human flesh with a small UAV
+ parts.
+ The overall geometry of the vehicle is therefore fundamental in preventing
+ fractures and penetrating trauma.
+ Ducted fans and smooth structures (i.e.
+ without protruding parts or with shells) could for example greatly reduce
+ the likelihood of such injuries.
+ Note that a real full scale UAV collision with a human dummy will be performed
+ at Georgia Tech this summer to study the technical and legal repercussions
+ of such an incident.
+\end_layout
+
+\begin_layout Standard
+Following this idea, we will discuss 3 solutions to reduce impact stress
+ of crashing UAVs.
+\end_layout
+
+\begin_layout Subsubsection
+Airbags for UAVs
+\end_layout
+
+\begin_layout Standard
+If we look at the automotive industry, the introduction of airbags in the
+ mid-1970s has had a very positive impact on the reduction of accident casualtie
+s
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Airbags statistics"
+
+\end_inset
+
+.
+ It is a very efficient mechanism to absorb energy during a shock and reduce
+ the impact force.
+ It is therefore not as surprise to see this technology used to soften UAV
+ landing when done via a parachute like for the Elbit Systems - Skylark
+ II.
+ Research has been done for this specific use of airbags
+\begin_inset CommandInset citation
+LatexCommand citep
+key "UAV airbags article"
+
+\end_inset
+
+ and companies are even developing dedicated product for UAV applications
+\begin_inset CommandInset citation
+LatexCommand citep
+key "UAV airbags manufacturer"
+
+\end_inset
+
+.
+ It is interesting to note that at the moment, airbags are only used to
+ prevent damage to the vehicle! But what about people? If asking everybody
+ to wear a personal airbag seems a bit out of proportion, even though it
+ is not completely unimaginable
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Wearable airbag"
+
+\end_inset
+
+, requiring that all UAVs carry an airbag system that would activated in
+ case of emergency would make a lot of sense.
+ Used in conjunction with energy reducing features, airbags could be prove
+ to be very efficient at minimizing human injuries, especially because of
+ their very fast speed of deployment
+\begin_inset CommandInset citation
+LatexCommand citep
+key "UAV crach in crowd"
+
+\end_inset
+
+.
+ Note that the deployment trigger can obviously not be the impact itself
+ like in cars, and that a preventive triggering strategy needs to be put
+ in place.
+ Because of the deployment speed of such systems, the minimum altitude requireme
+nt is much better than for parachutes for example.
+\end_layout
+
+\begin_layout Subsubsection
+Propellers brake or jettison
+\end_layout
+
+\begin_layout Standard
+As seen earlier in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Propeler hit video"
+
+\end_inset
+
+, propellers present an important danger for humans.
+ Their sharp profile and fast rotating speed makes them dangerous even though
+ the vehicle is not moving.
+ To address this specific threat, several passive solutions can be implemented
+ like ducted fans or protection shells 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bouncing drone"
+
+\end_inset
+
+.
+ Furthermore, active solution can also implemented in the vain of section
+ 3.1.3 were propellers could be jettisoned in case of emergency.
+ This is particularly relevant in case of motor controller lockup.
+ Through proper design, the jettisoned propellers could use their own shape
+ to slow down their descent like maple keys falling from the trees.
+ This way, the rotational energy of the propellers is reduced (because not
+ attached to the rotor anymore) and they become much less harmful to people
+ on the ground.
+ Finally, motor brakes could be implemented on the same model as for 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Saw stop"
+
+\end_inset
+
+ but specifically designed for electric motors.
+ Again, such technology is relatively straight forward and could potentially
+ prevent severe injuries in the future (ocular trauma for example).
+\end_layout
+
+\begin_layout Subsubsection
+Energy absorbing structures
+\end_layout
+
+\begin_layout Standard
+Learning again from the automotive industry, energy absorbing structures
+ is a key technology for minimizing trauma in case of collision.
+ This is achieved through proper geometrical design and material choice,
+ usually utilizing the various FEA analysis tools currently available.
+ These tools allow engineers to precisely control the way structures will
+ fail without relying on costly destructive testing, and for example chose
+ the failure points to maximize plastic deformation and energy absorption
+ during crash.
+\end_layout
+
+\begin_layout Standard
+Thanks also to the recent rise of additive manufacturing technologies, intricate
+ polymer or metallic structures can now be build with a single mouse click.
+ Resistant and highly optimized structural elements can therefore be incorporate
+d into UAVs like porous or composite parts (ref needed), that way providing
+ good strength and energy absorption at the same time.
+\end_layout
+
+\begin_layout Standard
+Because these features are fundamentally passive and an integrant part of
+ the vehicles structures, no complex electronic mechanism is required hence
+ making them very reliable and relatively inexpensive compare to additional
+ device like airbags of parachutes.
+\end_layout
+
+\begin_layout Section*
+Acknowledgment
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ICAO"
+
+\end_inset
+
+I.
+ C.
+ A.
+ O.
+ (2015).
+ ICAO Safety Report 2015.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "UAV airbags manufacturer"
+
+\end_inset
+
+Simonetti, R.
+ (2012, November 15).
+ Smooth landings.
+ Retrieved May 15, 2016, from www.aero-mag.com/features/18/201211/1641/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "UAV airbags article"
+
+\end_inset
+
+Alizadeh, M., Sedaghat, A., & Kargar, E.
+ (2014).
+ Shape and Orifice Optimization of Airbag Systems for UAV Parachute Landing.
+ International Journal of Aeronautical and Space Sciences, 15(3), 335-343.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Fault detection SoA"
+
+\end_inset
+
+Ali Zolghadri.
+ Analytical redundancy-based FDI techniques for real-world aerospace systems:
+ where are we today?.
+ 2nd IEEE International Conference on Systems and Control, Jun 2012, Morocco.
+ 2012.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Propeler hit video"
+
+\end_inset
+
+Aalborg University.
+ (2016, April 04).
+ DroneImpact - T0006 - 3200 fps to 7 fps (Pork, plastic propeller, 11 m/s).
+ Retrieved May 15, 2016, from www.youtube.com/watch?v=435mfUsi-3w
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Exploding asteroid"
+
+\end_inset
+
+Solem, J.
+ C.
+ (1995).
+ “Interception and disruption”, in Proceedings of Planetary Defense Workshop,
+ Livermore, CA, May 22–26, 1995, CONF-9505266 (LLNL, Livermore, CA), pp.
+ 219-228 (236-246).
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "PBX strenght"
+
+\end_inset
+
+Palmer, S.
+ J.
+ P., Field, J.
+ E., & Huntley, J.
+ M.
+ (1993, February).
+ Deformation, strengths and strains to failure of polymer bonded explosives.
+ In Proceedings of the Royal Society of London A: Mathematical, Physical
+ and Engineering Sciences (Vol.
+ 440, No.
+ 1909, pp.
+ 399-419).
+ The Royal Society.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "PBX CNC"
+
+\end_inset
+
+Carey Sublette (1999-02-20).
+ "4.1.6.2.2.5 Explosives".
+ 4.
+ Engineering and Design of Nuclear Weapons: 4.1 Elements of Fission Weapon
+ Design.
+ nuclearweaponarchive.org.
+ Retrieved 2010-02-08
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Building destruction"
+
+\end_inset
+
+Tom Harris (2001, June 26).
+ How Building Implosions Work.
+ HowStuffWorks.com.
+ Retrieved May 15, 2016, from howstuffworks.com/engineering/structural/building-i
+mplosion.htm
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Pirotechnic in aerospace"
+
+\end_inset
+
+Bement, L.
+ J., & Schimmel, M.
+ L.
+ (1995).
+ A manual for pyrotechnic design, development and qualification.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Wearable airbag"
+
+\end_inset
+
+Winter, C.
+ (2014, March 14).
+ A Wearable Airbag for Every Occasion.
+ Retrieved May 15, 2016, from www.bloomberg.com/news/articles/2014-03-14/a-wearabl
+e-airbag-for-every-occasion
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Pyrothechnics in automotive"
+
+\end_inset
+
+Aufauvre, L.
+ (2006, July).
+ New trends for pyrotechnic automotive safety in the European union.
+ In 33.
+ International Pyrotechnics Seminar (IPS 2006) (pp.
+ 509-512).
+ IPSUSA Seminars, Inc.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Arrété UAV france"
+
+\end_inset
+
+DEVA1528542A, C.
+ (2015).
+ Arrêté du 17 décembre 2015 relatif à la conception des aéronefs civils
+ qui circulent sans personne à bord, aux conditions de leur emploi et aux
+ capacités requises des personnes qui les utilisent.
+ Journal Officiel de la République Française, 2.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Crash on skier"
+
+\end_inset
+
+Sport Guardian.
+ (2015, December 22).
+ Skier Marcel Hirscher escapes injury as drone smashes behind him during
+ race.
+ Retrieved May 15, 2016, from www.theguardian.com/sport/2015/dec/23/champion-skier
+-marcel-hirscher-has-near-miss-as-drone-falls-out-of-sky
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Head trauma"
+
+\end_inset
+
+Brooks, N., Campsie, L., Symington, C., Beattie, A., & McKinlay, W.
+ (1986).
+ The five year outcome of severe blunt head injury: a relative's view.
+ Journal of Neurology, Neurosurgery & Psychiatry, 49(7), 764-770.
+\end_layout
+
+\begin_layout Bibliography
+\align block
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Airbags statistics"
+
+\end_inset
+
+National Highway Traffic Safety Administration (Archived from the original
+ on 26 February 2008).
+ Statistical Breakdown of Air Bag Fatalities.
+ Retrieved May 15, 2016, from goo.gl/nPEkHG
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "UAV crach in crowd"
+
+\end_inset
+
+Fung, K.
+ (2013, August 26).
+ Drone Recording Virginia Bull Run Crashes Into Crowd (VIDEO).
+ Retrieved May 16, 2016, from www.huffingtonpost.com/2013/08/26/drone-tv-bull-run-
+crash_n_3816600.html
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Bouncing drone"
+
+\end_inset
+
+Griffiths, S.
+ (2015, February 10).
+ The indestructible drone: Ball-shaped aircraft BOUNCES around buildings
+ and disaster zones.
+ Retrieved May 16, 2016, from www.dailymail.co.uk/sciencetech/article-2947472/The-i
+ndestructible-drone-Ball-shaped-aircraft-BOUNCES-buildings-disaster-zones.html
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Saw stop"
+
+\end_inset
+
+SawStop | How does SawStop work? Find out more today | SawStop.
+ (n.d.).
+ Retrieved May 16, 2016, from www.sawstop.com/why-sawstop/the-technology
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Parachutes for UAVs"
+
+\end_inset
+
+Wyllie, T.
+ (2001).
+ Parachute recovery for UAV systems.
+ Aircraft Engineering and Aerospace Technology, 73(6), 542-551.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Free fall cam"
+
+\end_inset
+
+Storey, P.
+ (2015, February 13).
+ Skydive Mag: The Freefall Camera.
+ Retrieved May 22, 2016, from www.skydivemag.com/article/the-freefall-camera
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "F18-without wing"
+
+\end_inset
+
+Jourdan, D.
+ B., Piedmonte, M.
+ D., Gavrilets, V., Vos, D.
+ W., & McCormick, J.
+ (2010, August).
+ Enhancing UAV survivability through damage tolerant control.
+ In AIAA Guidance, Navigation, and Control Conference (pp.
+ 2-5).
+\end_layout
+
+\end_body
+\end_document
